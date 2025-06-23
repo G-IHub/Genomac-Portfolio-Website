@@ -57,8 +57,8 @@
             </div>
         </div>
         <div class="relative">
-            <img src="assets/healthDay.svg" alt="" class="img1">
-            <img src="assets/dataResearch.svg" alt="" class="img2">
+            <img src="assets/health-day.png" alt="" class="img1">
+            <img src="assets/research.png" alt="" class="img2">
         </div>
     </section>
 
@@ -77,13 +77,13 @@
             </p>
         </div>
         <div class="about-img">
-            <img src="assets/image 4.png" alt="">
+            <img src="assets/health-worker.jpg" alt="">
         </div>
     </section>
 
     <!-- Service Section -->
     <section class="service-section">
-        <div class="detail-btn">Service</div>
+        <div class="section-btn">Service</div>
         <div class="service-grid">
             <div class="card">
                 <div class="card-content">
@@ -92,7 +92,8 @@
                         <p>Preventive Care</p>
                     </div>
                     <p class="card-body">
-                        Protect your health before problems start — early check-ups, screenings, and healthy habits go a long way. Prevention is the first step to lifelong wellness.
+                        Protect your health before problems start — early check-ups, screenings, and healthy habits go a
+                        long way. Prevention is the first step to lifelong wellness.
                     </p>
                 </div>
             </div>
@@ -103,7 +104,8 @@
                         <p>Chronic Diseases Management</p>
                     </div>
                     <p class="card-body">
-                        Protect your health before problems start — early check-ups, screenings, and healthy habits go a long way. Prevention is the first step to lifelong wellness.
+                        Protect your health before problems start — early check-ups, screenings, and healthy habits go a
+                        long way. Prevention is the first step to lifelong wellness.
                     </p>
                 </div>
             </div>
@@ -114,7 +116,8 @@
                         <p>Medication Management</p>
                     </div>
                     <p class="card-body">
-                        Protect your health before problems start — early check-ups, screenings, and healthy habits go a long way. Prevention is the first step to lifelong wellness.
+                        Protect your health before problems start — early check-ups, screenings, and healthy habits go a
+                        long way. Prevention is the first step to lifelong wellness.
                     </p>
                 </div>
             </div>
@@ -125,7 +128,8 @@
                         <p>Acute Illness Treatment</p>
                     </div>
                     <p class="card-body">
-                        Protect your health before problems start — early check-ups, screenings, and healthy habits go a long way. Prevention is the first step to lifelong wellness.
+                        Protect your health before problems start — early check-ups, screenings, and healthy habits go a
+                        long way. Prevention is the first step to lifelong wellness.
                     </p>
                 </div>
             </div>
@@ -134,7 +138,7 @@
 
     <!-- portfolio -->
     <section class="portfolio-section">
-        <div class="detail-btn">Portfolio</div>
+        <div class="section-btn">Portfolio</div>
         <div class="portfolio-grid">
             <div class="flex-box box1">
                 <img src="assets/image.png" alt="">
@@ -142,7 +146,8 @@
                     <small>Case Study</small>
                     <h3>Managing Hypertension in a 65-Years-Old Patient</h3>
                     <p>
-                        Successfully managed a patient's hypertension through lifestyle modifications and medication adjustments.
+                        Successfully managed a patient's hypertension through lifestyle modifications and medication
+                        adjustments.
                     </p>
                 </div>
             </div>
@@ -152,43 +157,53 @@
                     <small>Case Study</small>
                     <h3>Managing Hypertension in a 65-Years-Old Patient</h3>
                     <p>
-                        Successfully managed a patient's hypertension through lifestyle modifications and medication adjustments.
+                        Successfully managed a patient's hypertension through lifestyle modifications and medication
+                        adjustments.
                     </p>
                 </div>
             </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact-section">
+    <div class="contact-section">
         <div class="contact-container">
-            <div class="contact-content">
-                <h2>I'd love to hear from you</h2>
-                <p>Contact us regarding any concerns or inquiries.</p>
+            <div class="form-header">
+                <h2>I'ld love to hear from you</h2>
+                <p>Contact me regarding any concerns or inquiries</p>
             </div>
-            <form action="https://formspree.io/f/mnnvnjpj" method="POST">
-                <div class="row">
-                    <label>
-                        First Name
-                        <input type="text" name="firstname" placeholder="e.g. John">
-                    </label>
-                    <label>
-                        Last Name
+            <form action="https://formspree.io/f/mnnvnjpj" method="POST" class="contact-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>First name</label>
+                        <input type="text" name="first-name" placeholder="e.g John">
+                    </div>
+                    <div class="form-group">
+                        <label>Last name</label>
                         <input type="text" name="lastname" placeholder="e.g. Dowry">
-                    </label>
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Company</label>
+                        <input type="text" name="company" placeholder="e.g Company XYZ">
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="e.g johndowry@gmail.com">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="number">Phone Number</label>
+                        <input type="text" name="phonenumber">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="4"></textarea>
+                    </div>
                 </div>
-                <label class="email">
-                    Email
-                    <input type="email" name="email" placeholder="e.g. johndowry@gmail.com">
-                </label>
-                <label class="msg">
-                    Additional Message
-                    <textarea name="message" rows="6" placeholder="Type a message here..."></textarea>
-                </label>
-                <button type="submit" class="cta-btn primary">Send</button>
+                <div class="submit-button">
+                    <button type="submit">Send</button>
+                </div>
             </form>
         </div>
-    </section>
-
+    </div>
 </body>
 
 </html>
