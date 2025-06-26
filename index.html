@@ -10,29 +10,21 @@
 
 <body>
     <!-- Navigation -->
-    <nav>
+    <nav id="navbar">
         <div class="nav-logo">
-            <img src="assets//logo.jpg" alt="">
+            <img src="assets/logo.jpg">
             PortFolio
         </div>
-        <ul>
-            <li>
-                <a href="About">About</a>
-            </li>
-            <li>
-                <a href="Service">Service</a>
-            </li>
-            <li>
-                <a href="Portfolio">Portfolio</a>
-            </li>
-            <li>
-                <a href="Contact">Contact</a>
-            </li>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <div>
             <button class="cta-btn primary">Book Appointment</button>
         </div>
-        <div class="menu-icon">
+        <div class="menu-icon" id="menu-toggle" tabindex="0" aria-label="Open menu">
             <img src="assets/icon-hamburger.svg" alt="menu">
         </div>
     </nav>
@@ -57,13 +49,13 @@
             </div>
         </div>
         <div class="relative">
-            <img src="assets/health-day.png" alt="" class="img1">
-            <img src="assets/research.png" alt="" class="img2">
+            <img src="assets/health-day.png" class="img1">
+            <img src="assets/research.png" class="img2">
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="about-section">
+    <section id="about" class="about-section">
         <div class="about-text">
             <div class="about-btn">About Me</div>
             <p>
@@ -77,12 +69,12 @@
             </p>
         </div>
         <div class="about-img">
-            <img src="assets/health-worker.jpg" alt="">
+            <img src="assets/health-worker.jpg" loading="lazy">
         </div>
     </section>
 
     <!-- Service Section -->
-    <section class="service-section">
+    <section id="service" class="service-section">
         <div class="section-btn">Service</div>
         <div class="service-grid">
             <div class="card">
@@ -137,11 +129,11 @@
     </section>
 
     <!-- portfolio -->
-    <section class="portfolio-section">
+    <section id="portfolio" class="portfolio-section">
         <div class="section-btn">Portfolio</div>
         <div class="portfolio-grid">
             <div class="flex-box box1">
-                <img src="assets/image.png" alt="">
+                <img src="assets/image.png" loading="lazy">
                 <div class="portfolio-content">
                     <small>Case Study</small>
                     <h3>Managing Hypertension in a 65-Years-Old Patient</h3>
@@ -152,7 +144,7 @@
                 </div>
             </div>
             <div class="flex-box">
-                <img src="assets/image.png" alt="">
+                <img src="assets/image.png" loading="lazy">
                 <div class="portfolio-content">
                     <small>Case Study</small>
                     <h3>Managing Hypertension in a 65-Years-Old Patient</h3>
@@ -165,7 +157,7 @@
     </section>
 
     <!-- Contact Section -->
-    <div class="contact-section">
+    <div id="contact" class="contact-section">
         <div class="contact-container">
             <div class="form-header">
                 <h2>I'ld love to hear from you</h2>
@@ -204,6 +196,8 @@
             </form>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

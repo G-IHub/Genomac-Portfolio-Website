@@ -27,7 +27,6 @@ nav {
   align-items: center;
   padding: 20px 100px;
 }
-
 .nav-logo {
   display: flex;
   align-items: center;
@@ -35,31 +34,29 @@ nav {
   font-weight: 600;
   gap: 10px;
 }
-
 .nav-logo img {
   width: 35px;
 }
-
-nav ul {
+.nav-links {
   display: flex;
   gap: 24px;
-}
-
-nav ul li {
   list-style: none;
 }
-
-nav ul li a {
+.nav-links li a {
   font-size: 18px;
   font-weight: 500;
   color: #000;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
-
+.nav-links li a:hover {
+  color: #007bff;
+}
 .menu-icon {
   display: none;
+  cursor: pointer;
+  margin-left: 16px;
 }
-
 .cta-btn {
   font-size: 18px;
   padding: 10px;
@@ -67,12 +64,10 @@ nav ul li a {
   border-radius: 8px;
   cursor: pointer;
 }
-
 .primary {
   background-color: #0090f1;
   color: #fff;
 }
-
 .secondary {
   background-color: #fff;
   color: #0090f1;
@@ -335,11 +330,30 @@ textarea {
   .nav-logo img {
     width: 25px;
   }
-  nav ul {
-    display: none;
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    right: -100vw;
+    width: 60vw;
+    max-width: 300px;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 24px;
+    gap: 24px;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.07);
+    transition: right 0.8s;
+    z-index: 200;
+  }
+  .nav-links.open {
+    right: 0;
   }
   .menu-icon {
     display: block;
+  }
+  nav > div:not(.nav-logo):not(.menu-icon) {
+    display: none;
   }
   .cta-btn {
     font-size: 12px;
